@@ -6,3 +6,4 @@ Cards used will be A, 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K
 
 Theme: Black, Red, and White (Casino Theme).
 
+Buttons: Hit me, Hold up. 
