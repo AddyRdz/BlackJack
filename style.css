@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+}
+#cardDeck,.section{
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    width:400px;
+    margin: auto;
+}
+.card{
+    width: 500px;
+    height: 500px;
+    border:2px solid black;
+}
+#buttons,.section{
+    text-align: center;
+}
