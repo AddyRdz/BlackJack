@@ -35,7 +35,20 @@ function dealCards (){
 }
 
 // for each button need the queryselector and a eventhandler function
+// button Hit Me
+// const buttonHitMe =document.querySelector('.buttonHitMe')
+// console.log(buttonHitMe)
+// buttonHitMe.addEventListener("click",eventHandler)
+// function 
 
-const buttonHitMe =document.querySelector('.buttonHitMe')
-console.log(buttonHitMe)
+// button Restart
+// const buttonRestart =document.querySelector('buttonRestart')
+// console.log(buttonRestart)
+// buttonRestart.addEventListener("click",eventHandler)
+// function
 
+// button Hold
+// const buttonHold =document.querySelector('buttonHold')
+// console.log(buttonHold)
+// buttonRestart.addEventListener("click",eventHadler)
+// function
