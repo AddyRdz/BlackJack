@@ -27,15 +27,34 @@ for (let i=0; i<suite.length;i++){
     }
 }
 
+function splitDeck (){
+    let length = cards.length
+    for (let i=0; i<length;i++){
+        if (i % 2 == 0) {
+            let currentValue = cards.pop()
+            playerHand.push(currentValue)
+        }else {
+            let currentValue = cards.pop()
+            dealerHand.push(currentValue)
+        }
+    }
+}
+splitDeck()
+console.log(cards)
+console.log(playerHand)
+console.log(dealerHand)
+
 
 // first goal -
 // inside of make deck
 // use a for loop to loop over each card in your 'deck' variable
 // inside the for loop - use an if else statement
 // if the i variable is even (0, 2, 4, 6, 8) - take the value and add it playerHand array
-playerHand() {
+function playerTurn() {
     for (let i = 0; i<=10; i++) {
-        if (i % 2 == 0)
+        
+    } if (i % 2 == 0){
+
     }
 }
 // else add it the computerHand array
@@ -50,9 +69,9 @@ playerHand() {
 // Want to have function that removes random card from deck and returns it. (if, else maybe)
 //  need variables 
 
-function dealCards (){
+// function dealCards (){
 
-}
+// }
 
 // Eventually must do randomChoice ie. math.floor(math.random)
 
