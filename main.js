@@ -41,6 +41,13 @@ console.log(cards)
 console.log(playerHand)
 console.log(dealerHand)
 
+// Draw Random Card
+function drawRandomCard(deck){
+    let randomIndex = Math.floor(deck.length * Math.random());
+    return deck [randomIndex];
+}
+console.log(drawRandomCard(deck));
+
 
 
 // Eventually must do randomChoice ie. math.floor(math.random)
