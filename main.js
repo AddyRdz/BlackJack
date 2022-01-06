@@ -24,6 +24,8 @@ for (let i=0; i<suite.length;i++){
         deck.push(suite[i]+cards[j])
     }
 }
+
+
 // Deal Card to Player and Dealer
 function deal (){
     let length = cards.length
@@ -36,28 +38,40 @@ function deal (){
         
     
 }
+
+// Draw Random Card
+function drawRandomCard(){
+    let randomIndex = Math.floor(deck.length * Math.random());
+    return deck [randomIndex];
+}
+
+function pressHitMe(){
+    let drawnCard = drawRandomCard ()
+    console.log("pressHitMeWasCalled")
+    console.log(drawnCard)
+    // take the drawn cards value and put it inside of the div or playerHand
+    const playerDiv =document.querySelector(".playerSide")
+    console.log(".playerSide")
+    playerDiv.innerText = drawnCard
+}
+
+
+console.log(deck)
 deal()
 console.log(cards)
 console.log(playerHand)
 console.log(dealerHand)
-
-// Draw Random Card
-function drawRandomCard(deck){
-    let randomIndex = Math.floor(deck.length * Math.random());
-    return deck [randomIndex];
-}
 console.log(drawRandomCard(deck));
 
 
 
-// Eventually must do randomChoice ie. math.floor(math.random)
 
-// for each button need the queryselector and a eventhandler function
+
 // button Hit Me
-// const buttonHitMe =document.querySelector('.buttonHitMe')
-// console.log(buttonHitMe)
-// buttonHitMe.addEventListener("click",eventHandler)
-// function 
+const buttonHitMe =document.querySelector('.buttonHitMe')
+console.log(buttonHitMe)
+buttonHitMe.addEventListener("click",pressHitMe)
+
 
 // button Restart
 // const buttonRestart =document.querySelector('buttonRestart')
