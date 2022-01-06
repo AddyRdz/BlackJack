@@ -19,4 +19,33 @@ h1{
 }
 #buttons,.section{
     text-align: center;
+    transition-duration: 0.4s;
+    
+}
+.buttonHitMe {
+    background-color: red;
+    border-radius: 4px;
+    font-weight: bold;
+
+}
+.buttonHitMe:hover {
+    background-color: whitesmoke;
+}
+
+.buttonRestart{
+    background-color: red;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.buttonRestart:hover {
+    background-color: whitesmoke;
+}
+
+.buttonHold {
+    background-color: red;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.buttonHold:hover{
+    background-color: whitesmoke;
 }

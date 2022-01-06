@@ -26,6 +26,7 @@ for (let i=0; i<suite.length;i++){
         deck.push(suite[i]+cards[j])
     }
 }
+// Split Deck, evens go to player, odds go to dealer
 
 function splitDeck (){
     let length = cards.length
