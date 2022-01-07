@@ -54,14 +54,15 @@ function pressHitMe(){
     // take the player drawn cards value and put it inside of the div for playerSide
     console.log(".playerSide")
     showPlayerCards(playerHand)
+
     // take the dealer drawn cards value and put it inside the div for dealerSide
     let dealerDrawnCard = drawRandomCard()
     console.log(dealerDrawnCard)
-    const dealerDiv = document.querySelector(".dealerSide")
+    dealerHand.push(dealerDrawnCard)
     console.log(".dealerSide")
-    dealerDiv.innerText = dealerDrawnCard
+    showDealerCards(dealerHand)
 }
-// Shows second card on playerSide
+// Show multiple cards on playerSide
 function showPlayerCards(cards){
     const playerDiv =document.querySelector(".playerSide")
     console.log(playerHand)
@@ -72,16 +73,16 @@ function showPlayerCards(cards){
     }
 }
 
-// Shows second card on dealerSide
-// function showPlayerCards(cards){
-//     const playerDiv =document.querySelector(".playerSide")
-//     console.log(playerHand)
-//     console.log(cards)
-//     playerDiv.innerText = ""
-//     for (let i = 0;i<cards.length;i++){
-//         playerDiv.innerText += cards[i]
-//     }
-// }
+// Show multiple cards on dealerSide
+function showDealerCards(cards){
+    const dealerDiv =document.querySelector(".dealerSide")
+    console.log(dealerHand)
+    console.log(cards)
+    dealerDiv.innerText = ""
+    for (let i = 0;i<cards.length;i++){
+        dealerDiv.innerText += cards[i]
+    }
+}
 
 // Restart Button Function
 function pressRestart(){
