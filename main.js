@@ -1,6 +1,6 @@
 console.log('Cards are loaded')
 // Independent Array
-const suite = ["Spade", "Club", "Diamond", "Hearts"];
+const suite = ["♠", "♣", "♥", "♦"];
 // console.log(suite)
 const cards = [1,2,3,4,5,6,7,8,9,10];
 // console.log(cards)
@@ -44,19 +44,44 @@ function drawRandomCard(){
     let randomIndex = Math.floor(deck.length * Math.random());
     return deck [randomIndex];
 }
+
 //  HitMe Button Function
 function pressHitMe(){
-    let drawnCard = drawRandomCard ()
+    let playerDrawnCard = drawRandomCard ()
     // console.log("pressHitMeWasCalled")
-    console.log(drawnCard)
-    // take the drawn cards value and put it inside of the div or playerHand
+    console.log(playerDrawnCard)
+    // take the drawn cards value and put it inside of the div for playerHand
     const playerDiv =document.querySelector(".playerSide")
     console.log(".playerSide")
-    playerDiv.innerText = drawnCard
+    playerDiv.innerText = playerDrawnCard
+    // take the drawn cards value and put it inside the div for dealerSide
+    let dealerDrawnCard = drawRandomCard()
+    console.log(dealerDrawnCard)
+    const dealerDiv = document.querySelector(".dealerSide")
+    console.log(".dealerSide")
+    dealerDiv.innerText = dealerDrawnCard
 }
+
+// let dc =math
+// Do I need an if/else statement, after pressing the hold button I will press the hit me button and it will add to the dealerSide?
+
+
+// function isPlayerTurn(){
+//     const pl1 = document.createElement("div")
+//     const randomPlayerChoice = Math.floor(Math.random()*deck.length)
+// }
+
 // Restart Button Function
 function pressRestart(){
     return location.reload()
+
+}
+
+function pressHold(){
+    console.log(pressHold)
+}
+
+function winnerCheck(){
 
 }
 
@@ -85,7 +110,6 @@ buttonRestart.addEventListener("click",pressRestart)
 
 
 // button Hold
-// const buttonHold =document.querySelector(".buttonHold")
-// console.log(buttonHold)
-// buttonRestart.addEventListener("click",eventHadler)
-// function
+const buttonHold =document.querySelector(".buttonHold")
+console.log(buttonHold)
+buttonRestart.addEventListener("click",pressHold)
