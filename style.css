@@ -12,10 +12,17 @@ h1{
     width:400px;
     margin: auto;
 }
-.card{
-    width: 400px;
-    height: 400px;
+.dealerSide{
+    width: 200px;
+    height: 200px;
     border:4px solid black;
+    
+}
+.playerSide{
+    width: 200px;
+    height: 200px;
+    border:4px solid black;
+    
 }
 #buttons,.section{
     text-align: center;

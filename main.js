@@ -44,15 +44,20 @@ function drawRandomCard(){
     let randomIndex = Math.floor(deck.length * Math.random());
     return deck [randomIndex];
 }
-
+//  HitMe Button Function
 function pressHitMe(){
     let drawnCard = drawRandomCard ()
-    console.log("pressHitMeWasCalled")
+    // console.log("pressHitMeWasCalled")
     console.log(drawnCard)
     // take the drawn cards value and put it inside of the div or playerHand
     const playerDiv =document.querySelector(".playerSide")
     console.log(".playerSide")
     playerDiv.innerText = drawnCard
+}
+// Restart Button Function
+function pressRestart(){
+    return location.reload()
+
 }
 
 
@@ -68,19 +73,19 @@ console.log(drawRandomCard(deck));
 
 
 // button Hit Me
-const buttonHitMe =document.querySelector('.buttonHitMe')
+const buttonHitMe =document.querySelector(".buttonHitMe")
 console.log(buttonHitMe)
 buttonHitMe.addEventListener("click",pressHitMe)
 
 
 // button Restart
-// const buttonRestart =document.querySelector('buttonRestart')
-// console.log(buttonRestart)
-// buttonRestart.addEventListener("click",eventHandler)
-// function
+const buttonRestart =document.querySelector(".buttonRestart")
+console.log(buttonRestart)
+buttonRestart.addEventListener("click",pressRestart)
+
 
 // button Hold
-// const buttonHold =document.querySelector('buttonHold')
+// const buttonHold =document.querySelector(".buttonHold")
 // console.log(buttonHold)
 // buttonRestart.addEventListener("click",eventHadler)
 // function
