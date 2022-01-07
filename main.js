@@ -8,6 +8,7 @@ const cards = [1,2,3,4,5,6,7,8,9,10];
 const deck = []
 const playerHand = []
 const dealerHand = []
+let pScore = 0
 
 // Calling the function
 for(let i=0; i<suite.length;i++){
@@ -55,6 +56,12 @@ function pressHitMe(){
     console.log(".playerSide")
     showPlayerCards(playerHand)
 
+    // player Score
+    let cardScore = Number(playerDrawnCard.slice(1))
+        pScore+=cardScore
+    
+    console.log(pScore)
+
     // take the dealer drawn cards value and put it inside the div for dealerSide
     let dealerDrawnCard = drawRandomCard()
     console.log(dealerDrawnCard)
@@ -62,6 +69,7 @@ function pressHitMe(){
     console.log(".dealerSide")
     showDealerCards(dealerHand)
 }
+
 // Show multiple cards on playerSide
 function showPlayerCards(cards){
     const playerDiv =document.querySelector(".playerSide")
@@ -84,6 +92,7 @@ function showDealerCards(cards){
     }
 }
 
+
 // Restart Button Function
 function pressRestart(){
     return location.reload()
@@ -102,8 +111,6 @@ function winnerCheck(){
 
 // console.log(deck)
 // deal()
-
-
 // console.log(dealerHand)
 // console.log(drawRandomCard(deck));
 
