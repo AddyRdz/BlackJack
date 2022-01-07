@@ -30,7 +30,7 @@ for (let i=0; i<suite.length;i++){
 function deal (){
     let length = cards.length
     
-            let playerCard = cards.pop()
+            let playerCard = cards.pop() 
             playerHand.push(playerCard)
         
             let houseCard = cards.pop()
@@ -50,25 +50,37 @@ function pressHitMe(){
     let playerDrawnCard = drawRandomCard ()
     // console.log("pressHitMeWasCalled")
     console.log(playerDrawnCard)
-    // take the drawn cards value and put it inside of the div for playerHand
-    const playerDiv =document.querySelector(".playerSide")
+    playerHand.push(playerDrawnCard)
+    // take the player drawn cards value and put it inside of the div for playerSide
     console.log(".playerSide")
-    playerDiv.innerText = playerDrawnCard
-    // take the drawn cards value and put it inside the div for dealerSide
+    showPlayerCards(playerHand)
+    // take the dealer drawn cards value and put it inside the div for dealerSide
     let dealerDrawnCard = drawRandomCard()
     console.log(dealerDrawnCard)
     const dealerDiv = document.querySelector(".dealerSide")
     console.log(".dealerSide")
     dealerDiv.innerText = dealerDrawnCard
 }
+// Shows second card on playerSide
+function showPlayerCards(cards){
+    const playerDiv =document.querySelector(".playerSide")
+    console.log(playerHand)
+    console.log(cards)
+    playerDiv.innerText = ""
+    for (let i = 0;i<cards.length;i++){
+        playerDiv.innerText += cards[i]
+    }
+}
 
-// let dc =math
-// Do I need an if/else statement, after pressing the hold button I will press the hit me button and it will add to the dealerSide?
-
-
-// function isPlayerTurn(){
-//     const pl1 = document.createElement("div")
-//     const randomPlayerChoice = Math.floor(Math.random()*deck.length)
+// Shows second card on dealerSide
+// function showPlayerCards(cards){
+//     const playerDiv =document.querySelector(".playerSide")
+//     console.log(playerHand)
+//     console.log(cards)
+//     playerDiv.innerText = ""
+//     for (let i = 0;i<cards.length;i++){
+//         playerDiv.innerText += cards[i]
+//     }
 // }
 
 // Restart Button Function
@@ -76,22 +88,23 @@ function pressRestart(){
     return location.reload()
 
 }
-
+//  Hold Button Function
 function pressHold(){
     console.log(pressHold)
 }
 
+// This will determine winner (if/else)
 function winnerCheck(){
 
 }
 
 
-console.log(deck)
-deal()
-console.log(cards)
-console.log(playerHand)
-console.log(dealerHand)
-console.log(drawRandomCard(deck));
+// console.log(deck)
+// deal()
+
+
+// console.log(dealerHand)
+// console.log(drawRandomCard(deck));
 
 
 
