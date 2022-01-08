@@ -8,7 +8,8 @@ const cards = [1,2,3,4,5,6,7,8,9,10];
 const deck = []
 const playerHand = []
 const dealerHand = []
-let pScore = 0
+let playerScore = 0
+let dealerScore = 0
 
 // Calling the function
 for(let i=0; i<suite.length;i++){
@@ -56,11 +57,11 @@ function pressHitMe(){
     console.log(".playerSide")
     showPlayerCards(playerHand)
 
-    // player Score
+    // Score for Player
     let cardScore = Number(playerDrawnCard.slice(1))
-        pScore+=cardScore
+        playerScore+=cardScore
     
-    console.log(pScore)
+    console.log(playerScore)
 
     // take the dealer drawn cards value and put it inside the div for dealerSide
     let dealerDrawnCard = drawRandomCard()
@@ -68,6 +69,10 @@ function pressHitMe(){
     dealerHand.push(dealerDrawnCard)
     console.log(".dealerSide")
     showDealerCards(dealerHand)
+    // Score for Dealer
+    let cardScoreDealer = Number(dealerDrawnCard.slice(1))
+        dealerScore+=cardScoreDealer
+    console.log(dealerScore)
 }
 
 // Show multiple cards on playerSide
