@@ -73,6 +73,7 @@ function pressHitMe(){
     let cardScoreDealer = Number(dealerDrawnCard.slice(1))
         dealerScore+=cardScoreDealer
     console.log(dealerScore)
+    checkForWinner()
 }
 
 // Show multiple cards on playerSide
@@ -97,6 +98,26 @@ function showDealerCards(cards){
     }
 }
 
+// winning Conditions
+function checkForWinner() {
+    if (playerScore > 21) {
+        console.log ("Bust! You lose! House wins!")
+    } else if (playerScore === 21) {
+        console.log ("Blackjack! You win! House Loses!")
+    } else if (dealerScore > 21) {
+        console.log ("Bust! House loses! You win!")
+    }else if (dealerScore === 21) {
+        console.log ("Blackjack! House Wins! You lose!")
+    }else if (dealerScore === 21 && playerScore === 21){
+        console.log ("Tie!")
+    }else if (dealerScore > playerScore && dealerScore >16 && dealerScore <=21) {
+        console.log ("House wins! You lose!")
+    }else if (playerScore > dealerScore && playerScore >16 && playerScore <=21) {
+        console.log ("You win! House loses!")
+    }
+}
+
+
 
 // Restart Button Function
 function pressRestart(){
@@ -108,10 +129,7 @@ function pressHold(){
     console.log(pressHold)
 }
 
-// This will determine winner (if/else)
-function winnerCheck(){
 
-}
 
 
 // console.log(deck)
