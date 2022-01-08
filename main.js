@@ -102,22 +102,34 @@ function showDealerCards(cards){
 function checkForWinner() {
     if (playerScore > 21) {
         console.log ("Bust! You lose! House wins!")
+        winner.innerText = "Bust! You lose! House wins!"
     } else if (playerScore === 21) {
         console.log ("Blackjack! You win! House Loses!")
+        winner.innerText= "Blackjack! You win! House Loses!"
     } else if (dealerScore > 21) {
         console.log ("Bust! House loses! You win!")
+        winner.innerText= "Bust! House loses! You win!"
     }else if (dealerScore === 21) {
         console.log ("Blackjack! House Wins! You lose!")
+        winner.innerText= "Blackjack! House Wins! You lose!"
     }else if (dealerScore === 21 && playerScore === 21){
         console.log ("Tie!")
+        winner.innerText= "Tie!"
     }else if (dealerScore > playerScore && dealerScore >16 && dealerScore <=21) {
         console.log ("House wins! You lose!")
+        winner.innerText= "House wins! You lose!"
     }else if (playerScore > dealerScore && playerScore >16 && playerScore <=21) {
         console.log ("You win! House loses!")
+        winner.innerText= "You win! House loses!"
     }
 }
 
+const winner =document.querySelector('.winner')
+console.log(winner)
 
+// function showWinner(){
+
+// }
 
 // Restart Button Function
 function pressRestart(){
