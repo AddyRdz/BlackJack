@@ -1,9 +1,13 @@
 body{
-    background-color: green;
+    background: url(https://i.imgur.com/J6WIfwW.jpg);
     background-position: center;
 }
 
 h1{
+    text-align: center;
+}
+
+h2{
     text-align: center;
 }
 
@@ -13,14 +17,20 @@ h1{
     display: flex;
     width:400px;
     margin: auto;
+    justify-content: space-evenly;
+    
 }
 
 .dealerSide{
     width: 200px;
     height: 200px;
+    margin: 1ex;
     font-weight: bold;
     font-size: larger;
-    border:4px solid black;
+    border:3px solid black;
+    color: whitesmoke;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
     
 }
 
@@ -29,17 +39,23 @@ h1{
     height: 200px;
     font-size: larger;
     font-weight: bold;
-    border:4px solid black;
+    border:3px solid black;
+    margin: 1ex;
+    color: whitesmoke;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
     
-    
-}
+} 
 
 #result,.section{
     text-align: center;
+    font-size: larger;
+    font-weight: bolder;
 }
 
 .winner{
     text-align: center;
+    color: whitesmoke;
 }
 
 #buttons,.section{
@@ -52,6 +68,7 @@ h1{
     background-color: red;
     border-radius: 4px;
     font-weight: bold;
+    text-align: center;
 
 }
 
@@ -69,7 +86,7 @@ h1{
     background-color: whitesmoke;
 }
 
-.buttonHold {
+/* .buttonHold {
     background-color: red;
     border-radius: 4px;
     font-weight: bold;
@@ -77,4 +94,4 @@ h1{
 
 .buttonHold:hover{
     background-color: whitesmoke;
-}
+} */

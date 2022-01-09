@@ -127,10 +127,6 @@ function checkForWinner() {
 const winner =document.querySelector('.winner')
 console.log(winner)
 
-// function showWinner(){
-
-// }
-
 // Restart Button Function
 function pressRestart(){
     return location.reload()
@@ -142,15 +138,10 @@ function pressHold(){
 }
 
 
-
-
 // console.log(deck)
 // deal()
 // console.log(dealerHand)
 // console.log(drawRandomCard(deck));
-
-
-
 
 
 // button Hit Me
