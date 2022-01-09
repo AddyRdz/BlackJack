@@ -8,11 +8,13 @@ body{
 h1{
     text-align: center;
     color: whitesmoke;
+    text-shadow: 0 0 3px #098a4a, 0 0 5px #00ffb3;
 }
 
 h2{
     text-align: center;
     color: whitesmoke;
+    text-shadow: 0 0 3px #098a4a, 0 0 5px #00ffb3;
 }
 
 #cardDeck,.section{
@@ -32,11 +34,12 @@ h2{
     font-weight: bold;
     font-size: larger;
     border:3px solid white;
-    color: black;
+    color: #003300;
     justify-content: center;
+    text-shadow: 0 0 3px #098a4a, 0 0 5px #00ffb3;
     /* text-align: center; */
     /* vertical-align: middle; */
-    line-height: 275px;
+    line-height: 320px;
     background: url(https://i.imgur.com/q1kCNAqm.jpg)
     /* justify-content: center; */
     /* flex-direction: column; */
@@ -51,10 +54,11 @@ h2{
     font-weight: bold;
     border:3px solid white;
     margin: 1ex;
-    color: black;
+    color: #660000;
+    text-shadow: 0 0 3px #098a4a, 0 0 5px #00ffb3;
     /* text-align: center; */
     /* vertical-align: middle; */
-    line-height: 275px;
+    line-height: 320px;
     background: url(https://i.imgur.com/uioPgUs.png)
     /* flex-direction: column; */
     /* justify-content: space-between; */
@@ -75,12 +79,12 @@ h2{
 .winner{
     text-align: center;
     color: black;
+    text-shadow: 0 0 3px #098a4a, 0 0 5px #00ffb3;
 }
 
 #buttons,.section{
     text-align: center;
     transition-duration: 0.4s;
-    
 }
 
 .buttonHitMe {
