@@ -7,43 +7,55 @@ body{
 
 h1{
     text-align: center;
+    color: whitesmoke;
 }
 
 h2{
     text-align: center;
+    color: whitesmoke;
 }
 
 #cardDeck,.section{
     text-align: center;
     flex-wrap: nowrap;
     display: flex;
-    width:400px;
+    width: 500px;
     margin: auto;
     justify-content: space-evenly;
     
 }
 
 .dealerSide{
-    width: 200px;
-    height: 200px;
+    width: 360px;
+    height: 325px;
     margin: 1ex;
     font-weight: bold;
     font-size: larger;
-    border:3px solid black;
-    color: whitesmoke;
+    border:3px solid white;
+    color: black;
+    justify-content: center;
+    /* text-align: center; */
+    /* vertical-align: middle; */
+    line-height: 275px;
+    background: url(https://i.imgur.com/q1kCNAqm.jpg)
+    /* justify-content: center; */
     /* flex-direction: column; */
-    /* justify-content: space-between; */
+    
     
 }
 
 .playerSide{
-    width: 200px;
-    height: 200px;
+    width: 360px;
+    height: 325px;
     font-size: larger;
     font-weight: bold;
-    border:3px solid black;
+    border:3px solid white;
     margin: 1ex;
-    color: whitesmoke;
+    color: black;
+    /* text-align: center; */
+    /* vertical-align: middle; */
+    line-height: 275px;
+    background: url(https://i.imgur.com/uioPgUs.png)
     /* flex-direction: column; */
     /* justify-content: space-between; */
     
@@ -53,11 +65,16 @@ h2{
     text-align: center;
     font-size: larger;
     font-weight: bolder;
+    /* text-align: center;
+    vertical-align: text-bottom;
+    line-height: 35px; */
+    
+    
 }
 
 .winner{
     text-align: center;
-    color: whitesmoke;
+    color: black;
 }
 
 #buttons,.section{
@@ -67,7 +84,7 @@ h2{
 }
 
 .buttonHitMe {
-    background-color: red;
+    background-color: whitesmoke;
     border-radius: 4px;
     font-weight: bold;
     text-align: center;
@@ -75,17 +92,17 @@ h2{
 }
 
 .buttonHitMe:hover {
-    background-color: whitesmoke;
+    background-color: blue;
 }
 
 .buttonRestart{
-    background-color: red;
+    background-color: whitesmoke;
     border-radius: 4px;
     font-weight: bold;
 }
 
 .buttonRestart:hover {
-    background-color: whitesmoke;
+    background-color: red;
 }
 
 /* .buttonHold {
