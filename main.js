@@ -138,6 +138,7 @@ function pressHold(){
 }
 
 
+
 // console.log(deck)
 // deal()
 // console.log(dealerHand)
