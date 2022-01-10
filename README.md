@@ -30,7 +30,7 @@ CSS
 
 ## Images
 
-! (https://i.imgur.com/hIMtQpA.png)
+! (<img width="1728" alt="Screen Shot 2022-01-09 at 9 48 00 PM" src="https://user-images.githubusercontent.com/95986357/148792141-ce255033-fd85-46cb-8713-7da526991c39.png">)
 
 ! (https://i.imgur.com/qz1OsGG.png)
 
