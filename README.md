@@ -6,19 +6,19 @@ I followed the typical Blackjack game formula, but I did not implement a hold bu
 
 ## User Stories
 
-1. As a user, I will press the Hit Me button and receive a card.
+* As a user, I will press the Hit Me button and receive a card.
 
-2. As a user, I will proceed to press the Hit Me Button until I decide to stop.
+* As a user, I will proceed to press the Hit Me Button until I decide to stop.
 
-3. As a user, I will win a game by reaching the number 21.
+* As a user, I will win a game by reaching the number 21.
 
-4. As a user, when a winner I will see a message of "Blackjack Winner" when winning the game.
+* As a user, when a winner I will see a message of "Blackjack Winner" when winning the game.
 
-5. As a user, I will lose if I go over 21.
+* As a user, I will lose if I go over 21.
 
-6. As a user, when a loser I will see a message of "Loser, try again!" when losing the game.
+* As a user, when a loser I will see a message of "Loser, try again!" when losing the game.
 
-7. As a user, I will be able to press the Reset button to play again. 
+* As a user, I will be able to press the Reset button to play again. 
 
 ## Technologies Used
 
