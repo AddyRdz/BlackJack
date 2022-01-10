@@ -22,11 +22,11 @@ I followed the typical Blackjack game formula, but I did not implement a hold bu
 
 ## Technologies Used
 
-JavaScript
+* JavaScript
 
-HTML
+* HTML
 
-CSS
+* CSS
 
 ## Images
 
