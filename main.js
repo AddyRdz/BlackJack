@@ -155,8 +155,3 @@ const buttonRestart =document.querySelector(".buttonRestart")
 console.log(buttonRestart)
 buttonRestart.addEventListener("click",pressRestart)
 
-
-// button Hold
-const buttonHold =document.querySelector(".buttonHold")
-console.log(buttonHold)
-buttonRestart.addEventListener("click",pressHold)
