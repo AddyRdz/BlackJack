@@ -28,6 +28,12 @@ CSS
 
 ## Images
 
+! (https://i.imgur.com/hIMtQpA.png)
+
+! (https://i.imgur.com/qz1OsGG.png)
+
+### General
+
 Cards will be numbered 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 
 Cards will have the following symbols; "♠", "♣", "♥", "♦"
 
