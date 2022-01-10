@@ -23,7 +23,9 @@ I followed the typical Blackjack game formula, but I did not implement a hold bu
 ## Technologies Used
 
 JavaScript
+
 HTML
+
 CSS
 
 ## Images
